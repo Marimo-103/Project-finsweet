@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    display: block;    
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 74px; /* 137.037% */
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 64px; /* 133.333% */
+}
+
+h3 {
+    font-size: 38px;
+    line-height: 56px; /* 147.368% */
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px; /* 175% */
+    opacity: 0.7;
+}
+
+h1, h2, h3,h4, h5, p, a {
+    color: var(--Dark-blue, #282938);
+}
+
+.container {
+    max-width: 1280px;
+}
+
+.btn {
+    border-radius: 41px;
+    line-height: 28px; /* 175% */
+    background: #FCD980;
+    transition: .3s;
+}
+/* ====================================== navbar start ======================================= */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar .container ul {
+    gap: 32px;
+}
+
+.navbar .container ul li a {
+    color: #BBBBCB;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+.navbar .container ul li a.active {
+    color: var(--White, #FFF);
+}
+
+.navbar .container .btn {
+    background: transparent;
+    color: var(--White, #FFF);
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 48px;
+    margin: 16px 0 16px 48px;
+}
+
+.navbar .container .btn:hover {
+    background: #FCD980;
+    color: #1B1C2B;
+}
+/* ====================================== navbar end ======================================= */
+/* ====================================== section_1 (banner) start ======================================= */
+#banner_1 {
+    background: #1C1E53;
+}
+
+#banner_1 .container {
+    justify-content: space-between;
+}
+
+#banner_1 .container .texts {
+    padding: 218px 0 128px;
+}
+
+#banner_1 .container .texts h1 {
+    max-width: 582px;
+    color: var(--White, #FFF);
+    font-weight: 600;
+}
+
+#banner_1 .container .texts p {
+    max-width: 562px;
+    color: var(--White, #FFF);
+    font-weight: 500;
+    margin: 24px 0 48px;
+}
+
+#banner_1 .container .texts .buttons button {
+    padding: 16px 52px;
+    color: #1B1C2B;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px; /* 177.778% */
+    border: 2px solid #FCD980;
+
+}
+
+#banner_1 .container .texts .buttons {
+    column-gap: 40px;
+    align-items: end;
+}
+
+#banner_1 .container .texts .buttons button:hover {
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    color: #FFF;
+}
+
+#banner_1 .container .texts .buttons a {
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    transition: .3s;
+}
+
+#banner_1 .container .texts .buttons a svg {
+    margin-left: 16px;
+}
+
+#banner_1 .container .texts .buttons a:hover {
+    color: #FCD980;
+}
+
+#banner_1 .container .illustration_1 {
+    padding-top: 241px;
+
+}
+
+#banner_1 .container .illustration_1 .image {
+    width: 638px;
+    height: 361.115px;
+    background: url(../Images/banner_illustration-1.png);
+}
+/* ====================================== section_1 (banner) end ======================================= */
+/* =================================== section_2 (work explanation) start ================================== */
+#work_exp {
+    padding: 128px 0;
+}
+
+#work_exp .container .col-lg-5 h2, p {
+    max-width: 405px;
+}
+
+#work_exp .container .col-lg-5 h2 {
+    font-weight: 600;
+}
+
+#work_exp .container .col-lg-5 p {
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+#work_exp .container .col-lg-5 a {
+    color: #2405F2;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+}
+
+#work_exp .container .col-lg-5 a svg {
+    margin-left: 12px;
+}
+
+#work_exp .container .col-lg-7 .card {
+    width: 328px;
+    height: 178px;
+    border: none;
+}
+
+#work_exp .container .row .col-lg-7 {
+    display: flex !important; 
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+#work_exp .container .col-lg-7 .card .logo {
+    width: 50px;
+    height: 50px;
+    background: url(../Images/section_2-card_logo.png) var(--Royal-Blue, #2405F2);
+    color: var(--White, #FFF);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work_exp .container .col-lg-7 .card .card-body {
+    padding: 0;
+}
+
+#work_exp .container .col-lg-7 .card .card-body h5.card-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px; /* 150% */
+    margin: 16px 0 8px 0;
+}
+
+#work_exp .container .col-lg-7 .card .card-body p.card-text {
+    max-width: 303px;
+}
+/* =================================== section_2 (work explanation) end =================================== */
+/* =================================== section_3 (view projects) start =================================== */
+#projects {
+    padding: 128px 0;
+}
+
+#projects .container .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projects .container .title h2 {
+    font-weight: 600;
+}
+
+#projects .container .title a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    transition: .3s;
+}
+
+#projects .container .title a:hover {
+    color: var(--Royal-Blue, #2405F2);
+}
+
+#projects .container .title a svg {
+    margin-left: 16px;
+}
+
+#projects .container .row {
+    margin-top: 64px;
+}
+
+#projects .container .row .col-lg-8 {
+    position: relative;
+}
+
+#projects .container .project1 .texts {
+    position: absolute;
+    z-index: 22;
+    top: 312px;
+    left: 48px;
+    /* transition: .3s; */
+}
+/* 
+#projects .container .project1:hover .texts {
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+#projects .container .project1 .texts P {
+    color: var(--White, #FFF);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px; /* 150% */
+    max-width: 313px;
+    margin-bottom: 112px;
+    opacity: 1;
+}
+
+#projects .container .project1 .texts a {
+    color: var(--Yellow, #FCD980);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+#projects .container .project1 .texts a svg {
+    margin-left: 16px;
+}
+
+#projects .container .project1 .mask {
+    width: 100%;
+    overflow: hidden;
+}
+
+#projects .container .project1 .mask::before {
+    content: "";
+    width: 47%;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    position: absolute;
+    background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    transition: .3s;
+
+}
+
+#projects .container .project1 .mask:hover::before {
+    width: 98%;
+}
+
+
+#projects .container .project2 {
+    position: relative;
+}
+
+#projects .container .project2 .texts {
+    position: absolute;
+    z-index: 22;
+    top: 129px;
+    left: 56px;
+}
+
+#projects .container .project2 .texts P {
+    color: var(--White, #FFF);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px; /* 150% */
+    max-width: 290px;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+#projects .container .project2 .texts a {
+    color: var(--Yellow, #FCD980);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+#projects .container .project2 .texts a svg {
+    margin-left: 16px;
+}
+
+#projects .container .project2 .mask::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 9px;
+    position: absolute;
+    background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    transition: .3s;
+
+}
+
+#projects .container .project3 {
+    margin: 32px 0 0 9px;
+}
+/* =================================== section_3 (view projects) end =================================== */
+/* =================================== section_4 (features) start =================================== */
+#features {
+    background: #F4F6FC;
+    padding: 128px 0;
+}
+
+#features .container h5 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+#features .container h2 {
+    text-align: center;
+    font-weight: 600;
+    max-width: 630px;
+    margin: 12px auto 47px;
+}
+
+#features .container .row {
+    row-gap: 24px;
+}
+
+#features .container .child {
+    background: #FFF;
+    padding: 58px 32px 48px 48px;
+}
+
+#features .container .child h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
+    margin: 22px 0 12px;
+}
+/* =================================== section_4 (features) end =================================== */
+/* =================================== section_5 (review) start =================================== */
+#review {
+    padding: 128px 0 106px;
+    background: var(--Grey, rgba(244, 246, 252, 0.5));
+}
+
+#review .container .col-lg-4 h3 {
+    font-weight: 600;
+    max-width: 327px;
+    margin-bottom: 16px;
+}
+
+#review .container .col-lg-8 h3 {
+    max-width: 843px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px; /* 150% */
+}
+
+#review .container .col-lg-8 .profile {
+    column-gap: 10px;
+    margin-top: 48px;
+}
+
+#review .container .col-lg-8 .profile .image {
+    width: 58.248px;
+    height: 58.248px;
+    border-radius: 50%;
+    background: url(../Images/review_info-img.png) lightgray 50% / cover no-repeat;
+}
+
+#review .container .col-lg-8 .profile .info h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+    margin: 0;
+}
+
+#review .container .col-lg-8 .profile .info p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px; /* 233.333% */
+    opacity: 1;
+    margin: 0;
+}
+/* =================================== section_5 (review) end =================================== */
+/* =================================== section_6 (FAQ) start =================================== */
+#FAQ {
+    padding-top: 128px;
+}
+
+#FAQ .container .col-lg-4 h3 {
+    font-weight: 600;
+    max-width: 328px;
+    margin-bottom: 16px;
+}
+
+#FAQ .container .col-lg-4 a {
+    color: var(--Royal-Blue, #2405F2);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+}
+/* =================================== section_6 (FAQ) end =================================== */
+/* =================================== section_7 (inquiry) start =================================== */
+#inquiry {
+    padding-top: 128px;
+}
+
+#inquiry .container .banner {
+    width: 50%;
+    position: relative;
+}
+
+#inquiry .container .banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 30, 83, 0.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#inquiry .container .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#inquiry .container .banner .texts {
+    position: absolute;
+    top: 96px;
+    left: 96px;
+    z-index: 11;
+}
+
+#inquiry .container .banner .texts h1 {
+    color: var(--White, #FFF);
+    font-weight: 600;
+    margin-bottom: 24px;
+    max-width: 464px;
+}
+
+#inquiry .container .banner .texts p {
+    color: #FFF;
+    font-weight: 500;
+    opacity: 1;
+    max-width: 464px;
+}
+
+#inquiry .container .inquiry_form {
+    background: #1C1E53;
+    width: 50%;
+    padding: 96px 96px 48px;
+    flex-direction: column;
+}
+
+#inquiry .container .inquiry_form h4 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px; /* 150% */
+}
+
+#inquiry .container .inquiry_form p {
+    color: var(--Grey, #F4F6FC);
+    font-weight: 500;
+    opacity: 1;
+    max-width: 432px;
+    margin: 16px 0 40px;
+}
+
+#inquiry .container .inquiry_form input {
+    border-radius: 8px;
+    border: 1.5px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 16px;
+    padding: 18px 32px;
+    background: transparent;
+    color: var(--Grey, #F4F6FC);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    outline: none;
+}
+
+#inquiry .container .inquiry_form button {
+    padding: 15px 51px;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px; /* 177.778% */
+    border: 1px solid #FCD980;
+    margin: 23px 0 28px;
+}
+
+#inquiry .container .inquiry_form button:hover {
+    color: #ffffff;
+}
+
+#inquiry .container .inquiry_form a {
+    color: var(--White, #FFF);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+    text-align: center;
+    transition: .3s;
+}
+
+#inquiry .container .inquiry_form a:hover {
+    color: #FCD980;
+}
+
+#inquiry .container .inquiry_form a svg {
+    margin-left: 12px;
+}
+/* =================================== section_7 (inquiry) end =================================== */
+/* =================================== section_8 (blog) start =================================== */
+#blog {
+    padding: 128px 0;
+}
+
+#blog .container h2 {
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+#blog .container .card {
+    width: 100% !important;
+    border: none;
+    border-radius: none;
+}
+
+#blog .container .card img {
+    width: 100% !important;
+}
+
+#blog .container .card .card-body {
+    padding: 0;
+}
+
+#blog .container .card .card-body span {
+    color: var(--Dark-blue, #282938);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    opacity: 0.7;
+    display: inline-block;
+    margin: 40px 0px 16px;
+}
+
+#blog .container .card .card-body .card-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
+}
+
+#blog .container .card .card-body p.card-text {
+    margin: 16px 0 32px;
+}
+
+#blog .container .card .card-body a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+#blog .container .card .card-body a svg {
+    margin-left: 12px;
+}
+/* =================================== section_8 (blog) end =================================== */
+/* =================================== footer start =================================== */
+footer {
+    padding-top: 96px;
+    background: #1C1E53;
+}
+
+footer .container .left {
+    margin-top: 4px;
+}
+
+footer .container .left p {
+    color: var(--White, #FFF);
+    font-weight: 500;
+    opacity: .8;
+    margin: 22px 0 86px;
+}
+
+footer .container .left .box {
+    background: var(--Yellow, #FCD980);
+    padding: 18px 137px 16px 37px;
+    column-gap: 29px;
+    max-width: 517px;
+}
+
+footer .container .left .box ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer .container .left .box ul h5 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+}
+
+footer .container .left .box ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    opacity: .8;
+}
+
+footer .container .right h2 {
+    color: #FFF;
+    font-weight: 600;
+}
+
+footer .container .right p {
+    color: var(--Grey, #F4F6FC);
+    font-weight: 400;
+    opacity: .8;
+    margin: 14px 0 28px;
+}
+
+footer .container .right .icons {
+    column-gap: 27px;
+}
+
+footer .container .right .icons i {
+    font-size: 16px;
+    color: #FFF;
+}
+/* =================================== footer end =================================== */
+/* =================================== footerNav start =================================== */
+#footerNav .container {
+    padding: 32px 0;
+    justify-content: space-between;
+}
+
+#footerNav .container p {
+    font-weight: 500;
+    opacity: 1;
+}
+
+#footerNav .container ul {
+    column-gap: 32px;
+}
+
+#footerNav .container ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+/* =================================== footerNav end =================================== */
+
